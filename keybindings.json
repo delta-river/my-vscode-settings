@@ -1,0 +1,51 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+shift+oem_1",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-workbench.action.terminal.focus",
+        "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+k e",
+        "command": "-workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
+        "key": "ctrl+shift+space",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+5",
+        "command": "-workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+    }
+]

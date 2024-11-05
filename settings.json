@@ -1,0 +1,46 @@
+{
+    // VscodeVim settings.
+    // 検索で同じ文字列に色がつくやつ
+    "vim.hlsearch": true,
+    // 検索時には大文字小文字を無視
+    "vim.ignorecase": true,
+    // 入力中でもマッチしたものを表示してくれる
+    "vim.incsearch": true,
+    // 行の最初と最後でのカーソル移動時、行送りできるようにする
+    "vim.whichwrap": "h,l,<,>,[,]",
+    // クリップボードをレジスタとして使う
+    "vim.useSystemClipboard": true,
+    // ビジュアルモードのとき"*"で検索できるようにする
+    "vim.visualstar": true,
+    // pコマンドでレジスタの中身を書き換えない   
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "p",
+            ],
+            "after": [
+                "\"",
+                "_",
+                "d",
+                "P",
+            ]
+        }
+    ],
+    // General editor settings.
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "all",
+    // Python settings.
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.languageServer": "Pylance",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "isort.args": [
+        "--profile",
+        "black",
+    ],
+}
