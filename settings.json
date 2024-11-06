@@ -9,11 +9,11 @@
     // 行の最初と最後でのカーソル移動時、行送りできるようにする
     "vim.whichwrap": "h,l,<,>,[,]",
     // クリップボードをレジスタとして使う
-    "vim.useSystemClipboard": true,
+    //"vim.useSystemClipboard": true,
     // ビジュアルモードのとき"*"で検索できるようにする
     "vim.visualstar": true,
     // pコマンドでレジスタの中身を書き換えない   
-    "vim.visualModeKeyBindingsNonRecursive": [
+    /*"vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": [
                 "p",
@@ -25,7 +25,7 @@
                 "P",
             ]
         }
-    ],
+    ],*/
     // General editor settings.
     "editor.formatOnSave": true,
     "editor.renderWhitespace": "all",
@@ -34,13 +34,11 @@
     "python.analysis.autoImportCompletions": true,
     "python.languageServer": "Pylance",
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
             "source.organizeImports": "explicit"
-        }
-    },
-    "isort.args": [
-        "--profile",
-        "black",
-    ],
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    }
 }
