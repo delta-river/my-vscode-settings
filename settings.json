@@ -29,6 +29,7 @@
     // General editor settings.
     "editor.formatOnSave": true,
     "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": false,
     // Python settings.
     "python.analysis.autoFormatStrings": true,
     "python.analysis.autoImportCompletions": true,
@@ -40,5 +41,5 @@
             "source.organizeImports": "explicit"
         },
         "editor.defaultFormatter": "charliermarsh.ruff"
-    }
+    },
 }
